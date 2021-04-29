@@ -28,9 +28,11 @@ class LoginFragment : Fragment(R.layout.fragment_login) {
         super.onViewCreated(view, savedInstanceState)
 
         binding.button.setOnClickListener {
-            val action = LoginFragmentDirections.actionLoginFragmentToDetailFragment(
-                User("Heriberto", "Urena")
-            )
+//            val action = LoginFragmentDirections.actionLoginFragmentToDetailFragment(
+//                User("Heriberto", "Urena")
+//            )
+
+            val action = LoginFragmentDirections.actionLoginFragmentToMainFragment()
 
             findNavController().navigate(action)
         }

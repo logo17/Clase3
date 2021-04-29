@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_loginFragment_to_thirdFragment"
             app:destination="@id/thirdFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
     </fragment>
     <fragment
         android:id="@+id/detailFragment"
@@ -35,4 +38,9 @@
             android:name="name"
             app:argType="string" />
     </fragment>
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.loguito.clase3_1.fragments.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/fragment_main"/>
 </navigation>
